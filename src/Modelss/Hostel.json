@@ -1,0 +1,85 @@
+[
+    {
+        "name": "Cozy Apartment",
+        "maxCount": 4,
+        "phoneNumber": 1234567890,
+        "rentPay": 1000,
+        "imageurls": ["https://www.istockphoto.com/photo/youth-hostel-dorm-room-gm182498079-12199270?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fhostel&utm_term=hostel%3A%3A%3A", "https://www.istockphoto.com/photo/hostel-dormitory-beds-at-cheap-room-gm1464143895-496911797?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fhostel&utm_term=hostel%3A%3A%3A"],
+        "currentBookings": [
+          {
+            "startDate": "2023-10-01",
+            "endDate": "2023-10-10",
+            "guests": 2
+          },
+          {
+            "startDate": "2023-11-15",
+            "endDate": "2023-11-20",
+            "guests": 3
+          }
+        ],
+        "type": "Apartment",
+        "description": "A comfortable and well-furnished apartment in a quiet neighborhood."
+      },
+      {
+        "name": "Beachfront Villa",
+        "maxCount": 8,
+        "phoneNumber": 9876543210,
+        "rentPay": 2500,
+        "imageurls": ["https://example.com/villa1.jpg", "https://example.com/villa2.jpg"],
+        "currentBookings": [
+          {
+            "startDate": "2023-09-15",
+            "endDate": "2023-09-25",
+            "guests": 6
+          }
+        ],
+        "type": "Villa",
+        "description": "A luxurious villa with a private beach access and stunning ocean views."
+      },
+      {
+        "name": "Downtown Loft",
+        "maxCount": 2,
+        "phoneNumber": 5551234567,
+        "rentPay": 1200,
+        "imageurls": ["https://example.com/loft1.jpg"],
+        "currentBookings": [],
+        "type": "Apartment",
+        "description": "A stylish loft in the heart of the city, perfect for couples or solo travelers."
+      },
+      {
+        "name": "City View Apartment",
+        "maxCount": 4,
+        "phoneNumber": 9998887777,
+        "rentPay": 1500,
+        "imageurls": ["https://example.com/apartment1.jpg"],
+        "currentBookings": [
+          {
+            "startDate": "2023-10-05",
+            "endDate": "2023-10-15",
+            "guests": 2
+          },
+          {
+            "startDate": "2023-11-01",
+            "endDate": "2023-11-10",
+            "guests": 3
+          }
+        ],
+        "type": "Apartment",
+        "description": "An elegant apartment with stunning city views, close to all amenities."
+      },
+      {
+        "name": "Seaside Cottage",
+        "maxCount": 4,
+        "phoneNumber": 7775554444,
+        "rentPay": 1800,
+        "imageurls": ["https://example.com/cottage1.jpg", "https://example.com/cottage2.jpg"],
+        "currentBookings": [],
+        "type": "Cottage",
+        "description": "A charming cottage by the sea, perfect for a relaxing getaway."
+      }
+      
+      
+      
+      
+      
+]
