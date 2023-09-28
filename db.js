@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-var mongourl = 'mongodb+srv://jayu:hanishka123@cluster0.ebendkr.mongodb.net/mern-project';
+var mongourl = process.env.MONGODB_URL;
 mongoose.connect(mongourl, {useUnifiedTopology : true, useNewUrlParser:true})
 var connection = mongoose.connection;
 connection.on('err', ()=>{
