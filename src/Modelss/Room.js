@@ -3,33 +3,33 @@ const mongoose = require("mongoose")
 const roomSchema = mongoose.Schema({
     
         name: {
-            type:string,
+            type:String,
             required:true
         },
         maxCount : {
             type: Number,
-            reuired:true
+            required:true
         },
         phoneNumber:{
-            type:number,
+            type:Number,
             required:true
         },
         rentPay:{
-            type:number,
-            reuired:true
+            type:Number,
+            required:true
         },
         imageurls : [],
         currentBookings : [],
         type:{
-            type:string,
+            type:String,
             required : true 
         },
         description:{
-            type:string,
+            type:String,
             reuired:true 
         }
 },{
     timestamps : true,
 })
-const roomModel = mongoose.model('rooms', roomSchema)
+const roomModel = mongoose.model('Room', roomSchema)
 module.exports = roomModel
