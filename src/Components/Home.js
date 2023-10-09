@@ -8,6 +8,7 @@ function Home() {
 
     <div>
      <Navbar></Navbar>
+     <h1>Jayesh</h1>
      <div className='middlecontent'>
         <div className='text'>
           <h1>WELCOME TO <span className='pccoer'>PCCOER</span></h1>

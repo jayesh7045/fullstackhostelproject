@@ -19,9 +19,9 @@ const User = mongoose.model('User', userSchema);
 const express = require('express');
 const bcrypt = require('bcrypt');
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || '3000';
 
-// Middleware to parse JSON requests
+
 app.use(express.json());
 
 // Registration endpoint
@@ -47,7 +47,7 @@ app.post('/register', async (req, res) => {
   }
 });
 
-// Login endpoint
+
 app.post('/login', async (req, res) => {
   try {
     const { email, password } = req.body;

@@ -5,7 +5,7 @@ function Navbar() {
     <div>
       <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand" href="#">
-          HosTelMiTra
+          Hostel Mitra
         </a>
         <button
           class="navbar-toggler"

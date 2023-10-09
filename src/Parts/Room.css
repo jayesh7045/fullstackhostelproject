@@ -1,0 +1,31 @@
+.smallurl{
+    border-radius: 1vw !important;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ } 
+h1{
+    font-size: 2vw !important;
+}
+
+.btn{
+    background-color: black;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.data{
+    padding-left: 12vw;
+}
+.imagedata{
+    padding-left: 1vw;
+}
+.bs{
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+}
+.bigimg{
+    height: 20vw;
+}
+.buttons{
+    display: flex;
+    justify-content:space-evenly;
+}

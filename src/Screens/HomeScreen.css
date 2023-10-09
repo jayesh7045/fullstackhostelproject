@@ -1,0 +1,13 @@
+.row{
+    /* padding-left: 7vw; */
+}
+
+.cool{
+    display: flex;
+}
+.fil{
+    flex: 0.3;
+}
+.row{
+    flex: 1.7;
+}
