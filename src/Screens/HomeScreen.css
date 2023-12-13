@@ -1,13 +1,44 @@
-.row{
-    /* padding-left: 7vw; */
+*{
+    margin: 0;
+    padding: 0;
 }
-
-.cool{
+body{
+    height: 100vh;
+    width: 100%;
+    background-repeat: repeat;
+}
+.byn{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 16vw;
+    background-color: white;
+    height: 40vw;
+    position: relative;
+    top: 30%;
+    /* right: 80%; */
+    margin-top: 4vw;
+    border: 2px solid #222f3e;
+    border-radius: 3px;
+}
+.maincont{
     display: flex;
+    justify-content: space-evenly;
 }
-.fil{
-    flex: 0.3;
+.wifi{
+    width: 11vw;
 }
-.row{
-    flex: 1.7;
+.img{
+    z-index: -1;
+    position: absolute;
 }
+.bttn_{
+    margin-left: 2vw;
+}
+.filtersz{
+    margin-left: 2vw;  
+}
+.cool {
+    background-image: url('../Parts/e.jpg');
+    background-repeat: repeat;
+  }

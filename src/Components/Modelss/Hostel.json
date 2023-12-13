@@ -55,7 +55,8 @@
     }
   ],
   "type": "Apartment",
-  "description": "An elegant apartment with stunning city views, close to all amenities."
+  "description": "An elegant apartment with stunning city views, close to all amenities.",
+  "category" : "wifi"
 },
 {
   "name": "Seaside Cottage",
@@ -65,6 +66,12 @@
   "imageurls": ["https://example.com/cottage1.jpg", "https://example.com/cottage2.jpg"],
   "currentBookings": [],
   "type": "Cottage",
-  "description": "A charming cottage by the sea, perfect for a relaxing getaway."
+  "description": "A charming cottage by the sea, perfect for a relaxing getaway.",
+  "category" : "wifi"
 }
 ]
+
+
+
+
+

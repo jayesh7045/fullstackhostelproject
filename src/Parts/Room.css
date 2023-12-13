@@ -21,6 +21,7 @@ h1{
     padding-bottom: 2vw;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 10px;
+    width: 60vw;
 }
 .bigimg{
     height: 20vw;
@@ -28,4 +29,8 @@ h1{
 .buttons{
     display: flex;
     justify-content:space-evenly;
+}
+.roomis{
+    background-color: white;
+    margin: 10px 0px;
 }

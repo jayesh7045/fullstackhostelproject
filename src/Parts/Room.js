@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { Modal, Button, Carousel } from "react-bootstrap";
 import { useState } from "react";
 import { Link, NavLink, Path } from "react-router-dom";
-import axios from "axios";
 import "./Room.css";
 function Room({ props }) {
   const [show, setShow] = useState(false);
@@ -12,7 +11,7 @@ function Room({ props }) {
   const handleShow2 = () => setShow2(true);
   const handleClose2 = () => setShow2(false);
   return (
-    <div className="row bs">
+    <div className="row bs roomis">
       <div className="imagedata col-md-4 text-right">
         <img
           src={props.imageurls[0]}
@@ -23,7 +22,6 @@ function Room({ props }) {
         />
       </div>
       <div className="data col-md-7 text-left">
-
         <h1>{props.name}</h1>
         <p>
           <b>Maxcount</b> :- {props.maxCount}
@@ -35,7 +33,9 @@ function Room({ props }) {
           <b>Rentpay</b> :- {props.rentPay}
         </p>
         <div className="buttons">
-          <Link to={`/detail/${props._id}`}><button className="btn btn-primary">Get Info</button></Link>
+          <Link to={`/detail/${props._id}`}>
+            <button className="btn btn-primary">Get Info</button>
+          </Link>
           <button className="btn btn-primary" onClick={() => handleShow()}>
             Review Details
           </button>
@@ -76,7 +76,7 @@ function Room({ props }) {
             <b>Contact</b> : {props.phoneNumber}
           </p>
           <p>
-            <b>Whatsapp</b> : {props.phoneNumber}{" "}
+            <b>Whatsapp</b> : {props.phoneNumber}{""}
           </p>
           <p>
             <b>Email</b> : {props.type}
@@ -91,4 +91,5 @@ function Room({ props }) {
     </div>
   );
 }
-export default Room;
+
+export default Room

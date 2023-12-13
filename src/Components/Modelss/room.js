@@ -19,7 +19,6 @@ const roomSchema = mongoose.Schema({
             required:true
         },
         imageurls : [],
-        currentBookings : [],
         type:{
             type:String,
             required : true 
@@ -27,9 +26,21 @@ const roomSchema = mongoose.Schema({
         description:{
             type:String,
             reuired:true 
+        },
+        Wifi : {
+            type: String
+        },
+        address : {
+            type: String
+        },
+        duration:{
+            type: String
+        },
+        deposit_amount:{
+            type: String
         }
 },{
     timestamps : true,
 })
 const roomModel = mongoose.model('Room', roomSchema)
-module.exports = roomModel
+module.exports = roomModel;

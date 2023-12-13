@@ -1,0 +1,25 @@
+/* Styling for the navbar background */
+.navbar {
+    background-color: #3498db !important; /* Change to your preferred background color */
+    border: none; /* Remove any border, if present */
+    box-shadow: none; /* Remove any box shadow, if present */
+}
+
+/* Styling for the navigation links */
+.nav-link {
+    font-size: large;
+    color: #ffffff !important; /* Change to your preferred text color */
+    padding: 10px 20px; /* Add padding for better clickability */
+}
+
+/* Styling for the navbar brand (logo or site title) */
+.navbar-brand {
+    color: black; /* Change to your preferred brand color */
+    font-size: 1.5em; /* Increase font size for better visibility */
+}
+
+/* Add hover effect to navigation links for better user feedback */
+.nav-link:hover {
+    background-color: #2980b9; /* Change the background color on hover */
+    border-radius: 5px; /* Add rounded corners for a button-like effect */
+}

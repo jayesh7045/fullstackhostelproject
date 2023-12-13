@@ -1,4 +1,3 @@
-// Inside your app.js or server.js file
 const mongoose = require('mongoose');
 
 mongoose.connect('mongodb://localhost/mydatabase', {
@@ -20,7 +19,6 @@ const express = require('express');
 const bcrypt = require('bcrypt');
 const app = express();
 const port = process.env.PORT || '3000';
-
 
 app.use(express.json());
 
@@ -51,13 +49,10 @@ app.post('/register', async (req, res) => {
 app.post('/login', async (req, res) => {
   try {
     const { email, password } = req.body;
-
     const user = await User.findOne({ email });
-
     if (!user) {
       return res.status(401).send('Invalid email or password');
     }
-
     const isPasswordValid = await bcrypt.compare(password, user.password);
 
     if (!isPasswordValid) {

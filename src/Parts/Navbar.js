@@ -1,41 +1,45 @@
 import React from "react";
-import "./Navbar.css"
+import img1 from "./hbavk.png";
+import "./FrontPage.css";
+import img3 from "./smallhouse.jpg";
+import { NavLink } from "react-router-dom";
 function Navbar() {
   return (
     <div>
-      <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="#">
-          Hostel Mitra
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">
-                Register <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                Login
-              </a>
-            </li>
-          </ul>
+      <div className="nav">
+        <div className="address">
+          <span className="addcontent">
+            Pimpri Chinchwad College of Engineering and Research Pune
+          </span>
         </div>
-      </nav>
+        <div className="icons">
+          <i className="fa fa-facebook"></i>
+          <i className="fa fa-google"></i>
+          <i className="fa fa-twitter"></i>
+          <NavLink to={"/register"}><a>Signup</a></NavLink>
+           <NavLink to={"/login"}><a>Login</a></NavLink>
+        </div>
+      </div>
+
+      <div className="nav2">
+        <div className="heading">
+          <div className="img3">
+            <img src={img3} className="img3" alt="" />
+          </div>
+          <div className="logo">
+            Campus <span className="logo2">Quaters</span>
+          </div>
+        </div>
+        <div className="menu">
+          <NavLink to={"/"}><a>Home</a></NavLink>
+          <NavLink to={"/contact"}><a>Contact Us</a></NavLink>
+          <a href="#">FAQ</a>
+          <a href="">About Us</a>
+          
+        </div>
+      </div>
     </div>
-  );
+  )
 }
 
-export default Navbar;
+export default Navbar

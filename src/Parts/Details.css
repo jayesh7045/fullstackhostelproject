@@ -7,7 +7,7 @@ body {
     display: flex;
     width: 80vw;
     height: 70vh;
-    /* background-color: aquamarine; */
+    background-color: White;
     padding-top: 3vw;
     border-radius: 2vw;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -27,4 +27,8 @@ body {
     padding-top: 8vw;
     padding-left: 12vw;
     flex: 1;
+}
+.maincontentpart{
+    display: flex;
+    
 }
