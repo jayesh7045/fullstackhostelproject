@@ -1,24 +1,44 @@
-import React from "react";
-import img1 from "./hbavk.png";
-import "./FrontPage.css";
-import img3 from "./smallhouse.jpg";
+
+import "./jtemp.css";
 import { NavLink } from "react-router-dom";
 import Navbar from "./Navbar.js";
+import { useLocation } from "react-router-dom";
+
 function FrontPage() {
+  const location = useLocation();
+  const welcomeMessage = location?.state?.username
+    ? `Hello ${location.state.username} and Welcome to Campus Quarters`
+    : " User Please Login";
   return (
-    
     <div className="maindiv">
-      <Navbar></Navbar>
+      <Navbar message = {welcomeMessage}></Navbar>
+      
+      <div className="contentbelownav">
+        
+      <div className="welcomem">
+       
+      </div>
+      
       <div className="backimg">
-        <img src={img1} className="img1" alt="" />
+        <div className="outer">
         <div className="h-text">
           <h1>
-            <h1 className="welcome" >WELCOME TO <span className="cmp">CAMPUSQUARTERS</span></h1>
+            <h1 className="welcome">
+              WELCOME TO <span className="cmp">CAMPUSQUARTERS</span>
+            </h1>
           </h1>
-          <p className="explore"><b>EXPLORE, DREAM, AND ACHIEVE</b></p>
-          <NavLink to="./detail"><button>Explore</button></NavLink>
-          {/* <button><b>Learn more</b></button> */}
+          <p className="explore">
+            <b>EXPLORE, DREAM, AND ACHIEVE</b>
+          </p>
+          <NavLink to="./detail">
+            <button type="button" class="btn btn-success">
+              <div className="explorem">Explore</div>
+            </button>
+          </NavLink>
         </div>
+        </div>
+      </div>
+      
       </div>
     </div>
   );

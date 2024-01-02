@@ -1,7 +1,7 @@
 const express = require("express")
 const router = express.Router();
 
-const Room = require("../Components/Modelss/room")
+const Room = require("../Components/Backend/Modelss/room")
 router.get('/getallrooms', async(req, res)=>{
 
     try{

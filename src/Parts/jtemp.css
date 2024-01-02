@@ -1,0 +1,70 @@
+/* FrontPage.css */
+.body{
+  height: 100%;
+  width: 100%;
+}
+.maindiv {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  .outer{
+    margin-top: -10rem;
+    margin-left: 23%;
+    height: 20rem;
+    background-color: rgba(255, 255, 255, 0.53);
+    width: 50%;
+    border-radius: 5rem;
+
+  }
+
+  .welcomem {
+    
+    text-align: center;
+    margin-bottom: 2.5rem; 
+  }
+  .mmenu{
+    margin-top: 1.5vh;
+    font-size: 1rem;
+    margin-left: 17vw;
+  }
+  .contentbelownav { 
+    flex: 1;
+    background-image: url('./hbavk.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+  }
+  
+  .h-text1 {
+    
+    font-size: 1.5em;
+  }
+  
+  .welcome {
+    color: black;
+    margin-top: -10rem;
+    font-size: 2.5em;
+
+  }
+
+  .explore {
+    font-size: 1.2em;
+    color: #000;
+  }
+  .explorem{
+    font-size: 2vh;
+    color: white;
+  }
+  .explorebutton{
+    
+    background-color: beige;
+    
+  }
+
+
+
+  

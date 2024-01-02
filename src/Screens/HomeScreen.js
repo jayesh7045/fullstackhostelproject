@@ -76,7 +76,7 @@ function HomeScreen() {
       data = washingrooms;
     }
     return (
-      <div>
+      <div className="eachroom">
         {loading ? (
         <h1>Loading....</h1>
       ) : errors ? (

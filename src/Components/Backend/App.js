@@ -1,71 +1,53 @@
-const mongoose = require('mongoose');
-
-mongoose.connect('mongodb://localhost/mydatabase', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
-
-// Define a mongoose schema for user data
-const userSchema = new mongoose.Schema({
-  username: String,
-  email: String,
-  password: String,
-});
-
-const User = mongoose.model('User', userSchema);
-
-// Inside your app.js or server.js file
-const express = require('express');
-const bcrypt = require('bcrypt');
+const express = require("express")
+const collection = require("./mongo")
+const cors = require("cors");
 const app = express();
-const port = process.env.PORT || '3000';
-
 app.use(express.json());
+app.use(express.urlencoded({extended : true}))
+app.use(cors());
+app.get("/register", cors(), (req, res)=>{
 
-// Registration endpoint
-app.post('/register', async (req, res) => {
-  try {
-    const { username, email, password } = req.body;
+})
 
-    // Hash the password before storing it in the database
-    const hashedPassword = await bcrypt.hash(password, 10);
-
-    const newUser = new User({
-      username,
-      email,
-      password: hashedPassword,
-    });
-
-    await newUser.save();
-
-    res.status(201).send('Registration successful');
-  } catch (error) {
-    console.error(error);
-    res.status(500).send('Internal Server Error');
-  }
-});
-
-
-app.post('/login', async (req, res) => {
-  try {
-    const { email, password } = req.body;
-    const user = await User.findOne({ email });
-    if (!user) {
-      return res.status(401).send('Invalid email or password');
+app.post("/register", async(req, res)=>{
+  const [username, email, password, confirm_password]  = req.body
+  try{
+    const check = await collection.findOne({email : email})
+    if(check)
+    {
+      res.json("exists");
     }
-    const isPasswordValid = await bcrypt.compare(password, user.password);
-
-    if (!isPasswordValid) {
-      return res.status(401).send('Invalid email or password');
+    else{
+      res.json("notexists")
     }
-
-    res.status(200).send('Login successful');
-  } catch (error) {
-    console.error(error);
-    res.status(500).send('Internal Server Error');
   }
-});
+  catch(err){
+    res.json("notexists")
+  }
+})
 
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
-});
+app.post('/login', async(req, res)=>{
+  const [username, password] = req.body
+  const data = {
+    email : email,
+    password : password
+  }
+  try{
+    const check = await collection.findOne({email : email})
+    if(check){
+      res.json("exists");
+    }
+    else{
+      res.json("notexists");
+      await collection.insertMany([data]);
+
+    }
+  }
+  catch(e){
+    req.json("notexists")
+  }
+})
+
+app.listen(3000, ()=>{
+  console.log("Port connected");
+})

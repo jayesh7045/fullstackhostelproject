@@ -39,6 +39,13 @@ body{
     margin-left: 2vw;  
 }
 .cool {
-    background-image: url('../Parts/e.jpg');
+    /* background-image: url('../Parts/e.jpg'); */
+    background-color:#8bbaae;
     background-repeat: repeat;
+  }
+  .details{
+    background-color: #8bbaae;
+  }
+  .eachroom{
+    background-color: #8bbaae
   }

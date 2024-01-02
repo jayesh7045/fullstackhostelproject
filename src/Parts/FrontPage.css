@@ -79,17 +79,18 @@
     width: 100%;
     height: 100%;
   }
-  .backimg::before {
+  /* .backimg::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.5)75%, #e67e22), url('./hbavk.png');
+    background: linear-gradient(rgba(195, 8, 8, 0.16) 75%, #e67d2210),
+    url('./hbavk.png');
     background-size: cover;
     background-position: center;
-  }
+  } */
 
 
 .h-text{
@@ -105,7 +106,7 @@
 }
 .cmp{
     font-weight: 1000 !important;
-    color: #e67e22;
+    color: #ea7611;
     font-family: "Dancing Script" !important;
     font-size: 1.4em !important;
 }
@@ -124,3 +125,21 @@
 .explore{
     font-size: larger;
 }
+
+/* Your existing styles for other elements */
+
+.address {
+    text-align: center; /* Adjust as needed */
+  }
+  
+  .addcontent {
+    display: inline-block; /* Display the content in a line */
+  }
+  
+  .logo h2 {
+    display: inline; /* Ensure the h2 is inline */
+    margin-left: 15rem; /* Adjust the spacing between the address and the message */
+    font-size: 1.0em; /* Adjust the font size as needed */
+    color: #007bff; /* Adjust the color as needed */
+  }
+  

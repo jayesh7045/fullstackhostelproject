@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    background-color: #8bbaae;
   }
 .packer{
     margin-left: 11vw;
@@ -7,7 +8,7 @@ body {
     display: flex;
     width: 80vw;
     height: 70vh;
-    background-color: White;
+    background-color: #d6d6d2;
     padding-top: 3vw;
     border-radius: 2vw;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
