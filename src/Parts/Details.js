@@ -51,27 +51,27 @@ function Details() {
         <div>
           <div className="row">
             <div className="packer">
-              <div className="centerimage">
+              {/* <div className="centerimage">
                 <img src={room.imageurls[0]} className="bigimage" alt="" />
-              </div>
+              </div> */}
               <div className="datais">
-                <h1>{room.name}</h1>
+                <h1>{room.hostel_name}</h1>
                 <p>
-                  <b>Maxcount</b> :- {room.maxCount}
+                  <b>Maxcount</b> :- {room.no_of_person}
                 </p>
                 <p>
-                  <b>PhoneNumber</b> :- {room.phoneNumber}
+                  <b>Address</b> :- {room.address}
                 </p>
                 <p>
-                  <b>Rentpay</b> :- {room.rentPay}
+                  <b>Rentpay</b> :- {room.rent}
                 </p>
                 <p>
-                  <b>Wifi</b>:- {room.category}
+                  <b>Wifi</b>:- {room.wifi_availability}
                 </p>
                 <p>
-                  <b>Washing Machine</b>:- {room.washingMachine}
+                  <b>Washing Machine</b>:- {room. washing_machine_availability}
                 </p>
-                <p> <b>Location</b> :- <a href={room.view_on_map}>View</a></p>
+                <p> <b>Location</b> :- <a href={room.view}>View</a></p>
               </div>
             </div>
             <div className="col-md-7"></div>

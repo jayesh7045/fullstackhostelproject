@@ -24,13 +24,13 @@ function Room({ props }) {
       <div className="data col-md-7 text-left">
         <h1>{props.name}</h1>
         <p>
-          <b>Maxcount</b> :- {props.maxCount}
+          <b>Name</b> :- {props.hostel_name}
         </p>
         <p>
-          <b>PhoneNumber</b> :- {props.phoneNumber}
+          <b>Address</b> :- {props.address}
         </p>
         <p>
-          <b>Rentpay</b> :- {props.rentPay}
+          <b>Rentpay</b> :- {props.rent}
         </p>
         <div className="buttons">
           <Link to={`/detail/${props._id}`}>

@@ -2,20 +2,16 @@ const mongoose = require("mongoose")
 
 const roomSchema = mongoose.Schema({
     
-        name: {
+    hostel_name: {
             type:String,
             required:true
         },
-        maxCount : {
-            type: Number,
+        no_of_person : {
+            type: String,
             required:true
         },
-        phoneNumber:{
-            type:Number,
-            required:true
-        },
-        rentPay:{
-            type:Number,
+        rent:{
+            type:String,
             required:true
         },
         imageurls : [],
@@ -23,11 +19,11 @@ const roomSchema = mongoose.Schema({
             type:String,
             required : true 
         },
-        description:{
-            type:String,
-            reuired:true 
+        washing_machine_availability:{
+            type: String, 
+            required : true
         },
-        Wifi : {
+        wifi_availability : {
             type: String
         },
         address : {
@@ -38,9 +34,13 @@ const roomSchema = mongoose.Schema({
         },
         deposit_amount:{
             type: String
+        },
+        view : {
+            type : String,
+            required: true
         }
 },{
     timestamps : true,
 })
-const roomModel = mongoose.model('Room', roomSchema)
-module.exports = roomModel;
+const mycollection = mongoose.model('mycollection', roomSchema)
+module.exports = mycollection;

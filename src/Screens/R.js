@@ -1,7 +1,6 @@
 import React from "react";
 import Navbar from "../Parts/Navbar";
 import { useState } from "react";
-// import "./R.css";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 function R() {

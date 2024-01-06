@@ -24,9 +24,9 @@ function HomeScreen() {
         setLoading(false);
         setRooms(data);
         setErrors(false);
-        const wifiRoomsData = data.filter((room) => room.category === "wifi");
-        const Rentrooms = data.filter((room)=>(room.rentPay > 1000));
-        const WashingRooms = data.filter((room)=>(room.washingmachine === "yes")); 
+        const wifiRoomsData = data.filter((room) => room.wifi_availability.toLowerCase() === "yes");
+        const Rentrooms = data.filter((room)=>(Number.parseInt(room.rentPay) > 1000));
+        const WashingRooms = data.filter((room)=>(room.washing_machine_availability.toLowerCase() === "yes")); 
         setWifiRooms(wifiRoomsData);
       } catch (error) {
         setErrors(true);

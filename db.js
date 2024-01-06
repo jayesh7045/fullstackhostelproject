@@ -10,4 +10,5 @@ connection.on('err', ()=>{
 connection.on("connected", ()=>{
     console.log("Mongo DB Connection Successful")
 })
+
 module.exports = mongoose
