@@ -14,7 +14,7 @@ function Room({ props }) {
     <div className="row bs roomis">
       <div className="imagedata col-md-4 text-right">
         <img
-          src={props.imageurls[0]}
+          src={props.images_urls[0]}
           width="auto"
           height="250"
           className="smallurl"
@@ -50,7 +50,7 @@ function Room({ props }) {
         </Modal.Header>
         <Modal.Body>
           <Carousel prevLabel="" nextLabel="">
-            {props.imageurls.map((url) => {
+            {props.images_urls.map((url) => {
               return (
                 <Carousel.Item>
                   <img src={url} alt="" className="d-block w-100 bigimg" />

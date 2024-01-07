@@ -20,8 +20,8 @@ function Details() {
         if (Array.isArray(response.data) && response.data.length > 0) {
           
           const matchingRoom = response.data.find((room) => room._id === roomid);
-          const wifiRooms = response.data.find((room)=>room.category === "wifi")
-          const Rentrooms = response.data.find((room)=>(room.rentPay < 1000))
+          const wifiRooms = response.data.find((room)=>room.wifi_availability === "yes")
+          const Rentrooms = response.data.find((room)=>(Number.parseInt(room.rentPay) < 1000))
           console.log(wifiRooms)
           if (matchingRoom) {
             setRoom(matchingRoom);
@@ -51,9 +51,9 @@ function Details() {
         <div>
           <div className="row">
             <div className="packer">
-              {/* <div className="centerimage">
-                <img src={room.imageurls[0]} className="bigimage" alt="" />
-              </div> */}
+              <div className="centerimage">
+                <img src={room.images_urls[0]} className="bigimage" alt="" />
+              </div>
               <div className="datais">
                 <h1>{room.hostel_name}</h1>
                 <p>
